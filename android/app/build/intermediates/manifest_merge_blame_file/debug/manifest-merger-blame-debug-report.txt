@@ -1,0 +1,526 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.loginapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:7:3-75
+11-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:7:20-73
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:3:3-64
+12-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:3:20-62
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:4:3-64
+13-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:4:20-61
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:5:3-78
+14-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:5:20-76
+15    <uses-permission android:name="android.permission.VIBRATE" /> <!-- These require runtime permissions on M -->
+15-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:4:3-64
+15-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:4:20-61
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:10:3-77
+16-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:10:20-75
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- END OPTIONAL PERMISSIONS -->
+17-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:11:3-78
+17-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:11:20-76
+18    <queries>
+18-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:14:3-21:13
+19
+20        <!-- Support checking for http(s) links via the Linking API -->
+21        <intent>
+21-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:16:5-20:14
+22            <action android:name="android.intent.action.VIEW" />
+22-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:17:7-59
+22-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:17:15-56
+23
+24            <category android:name="android.intent.category.BROWSABLE" />
+24-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:18:7-68
+24-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:18:17-65
+25
+26            <data android:scheme="https" />
+26-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:19:7-38
+26-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:19:13-35
+27        </intent>
+28        <!-- Query open documents -->
+29        <intent>
+29-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-19:18
+30            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+30-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-79
+30-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:21-76
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+34-->[com.facebook.flipper:flipper:0.54.0] /home/rohit/.gradle/caches/transforms-3/68ae772227d3e842881c52b4bff33e89/transformed/jetified-flipper-0.54.0/AndroidManifest.xml:16:5-76
+34-->[com.facebook.flipper:flipper:0.54.0] /home/rohit/.gradle/caches/transforms-3/68ae772227d3e842881c52b4bff33e89/transformed/jetified-flipper-0.54.0/AndroidManifest.xml:16:22-73
+35    <uses-permission android:name="android.permission.WAKE_LOCK" />
+35-->[:react-native-firebase_auth] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+35-->[:react-native-firebase_auth] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+36    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+36-->[:react-native-firebase_auth] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+36-->[:react-native-firebase_auth] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+37    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+37-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
+37-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:22-79
+38    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+39    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+40    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+41    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+42    <!-- for Samsung -->
+43    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+43-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+43-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+44    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+44-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+44-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+45    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+45-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+45-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+46    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+46-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+46-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+47    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+47-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+47-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+48    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+48-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+48-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+49    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+49-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+49-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+50    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+50-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+50-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+51    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+51-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+51-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+52    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+52-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+52-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+53    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+53-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+53-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+54    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+54-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+54-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+55    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+55-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+55-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+56    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+56-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+56-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+57    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+57-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+57-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+58    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+58-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+58-->[me.leolin:ShortcutBadger:1.1.22] /home/rohit/.gradle/caches/transforms-3/337e79cdbc1f2cad06823f4a7c4d4f43/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+59    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+59-->[com.android.installreferrer:installreferrer:1.0] /home/rohit/.gradle/caches/transforms-3/3c05d2e5b4997e8803cf99c158686bca/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+59-->[com.android.installreferrer:installreferrer:1.0] /home/rohit/.gradle/caches/transforms-3/3c05d2e5b4997e8803cf99c158686bca/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+60
+61    <application
+61-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:23:3-56:17
+62        android:name="com.loginapp.MainApplication"
+62-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:23:16-47
+63        android:allowBackup="false"
+63-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:23:162-189
+64        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+64-->[androidx.core:core:1.3.0] /home/rohit/.gradle/caches/transforms-3/3eee0049f11421178d7af6c5b7948348/transformed/core-1.3.0/AndroidManifest.xml:24:18-86
+65        android:debuggable="true"
+66        android:icon="@mipmap/ic_launcher"
+66-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:23:81-115
+67        android:label="@string/app_name"
+67-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:23:48-80
+68        android:roundIcon="@mipmap/ic_launcher_round"
+68-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:23:116-161
+69        android:theme="@style/AppTheme"
+69-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:23:190-221
+70        android:usesCleartextTraffic="true" >
+70-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:23:222-257
+71        <meta-data
+71-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:24:5-103
+72            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+72-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:24:16-67
+73            android:value="YOUR-APP-URL-HERE" />
+73-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:24:68-101
+74        <meta-data
+74-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:25:5-112
+75            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+75-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:25:16-68
+76            android:value="YOUR-APP-SDK-VERSION-HERE" />
+76-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:25:69-110
+77
+78        <activity
+78-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:26:5-31:16
+79            android:name="com.loginapp.MainActivity"
+79-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:26:15-43
+80            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+80-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:26:77-154
+81            android:label="@string/app_name"
+81-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:26:44-76
+82            android:launchMode="singleTask"
+82-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:26:155-186
+83            android:theme="@style/Theme.App.SplashScreen"
+83-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:26:230-275
+84            android:windowSoftInputMode="adjustResize" >
+84-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:26:187-229
+85            <intent-filter>
+85-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:27:7-30:23
+86                <action android:name="android.intent.action.MAIN" />
+86-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:28:9-60
+86-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:28:17-58
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:29:9-68
+88-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:29:19-66
+89            </intent-filter>
+90        </activity>
+91        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+91-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:32:5-81
+91-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:32:15-79
+92
+93        <meta-data
+93-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:33:6-34:44
+94            android:name="com.dieam.reactnativepushnotification.notification_foreground"
+94-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:33:18-94
+95            android:value="false" /> <!-- Change the resource name to your App's accent color - or any other color you want -->
+95-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:34:21-42
+96        <meta-data
+96-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:36:9-37:54
+97            android:name="com.dieam.reactnativepushnotification.notification_color"
+97-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:36:21-92
+98            android:resource="@color/white" /> <!-- or @android:color/{name} to use a standard color -->
+98-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:37:21-52
+99        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationActions" />
+99-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:39:9-108
+99-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:39:19-105
+100        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+100-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:40:9-110
+100-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:40:19-107
+101        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver" >
+101-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:41:9-47:20
+101-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:41:19-115
+102            <intent-filter>
+102-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:42:13-46:29
+103                <action android:name="android.intent.action.BOOT_COMPLETED" />
+103-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:43:17-79
+103-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:43:25-76
+104                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+104-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:44:17-82
+104-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:44:25-79
+105                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+105-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:45:17-81
+105-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:45:25-79
+106            </intent-filter>
+107        </receiver>
+108
+109        <service
+109-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:49:9-55:19
+110            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+110-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:50:13-107
+111            android:exported="false" >
+111-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:51:13-37
+112            <intent-filter>
+112-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:52:13-54:29
+113                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+113-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:53:17-78
+113-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:53:25-75
+114            </intent-filter>
+115        </service>
+116
+117        <meta-data
+117-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:36
+118            android:name="app_data_collection_default_enabled"
+118-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-63
+119            android:value="true" />
+119-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-33
+120
+121        <service
+121-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-18:19
+122            android:name="com.google.firebase.components.ComponentDiscoveryService"
+122-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:18-89
+123            android:directBootAware="true"
+123-->[com.google.firebase:firebase-common:20.0.0] /home/rohit/.gradle/caches/transforms-3/dfc172e13ac61f3210434dcbcf410699/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+124            android:exported="false" >
+124-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:76:13-37
+125            <meta-data
+125-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
+126                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+126-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-120
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+129                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+129-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+132                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+132-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-datatransport:18.0.0] /home/rohit/.gradle/caches/transforms-3/f3fe407eee430310c06bd6258ec434c8/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+135                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+135-->[com.google.firebase:firebase-datatransport:18.0.0] /home/rohit/.gradle/caches/transforms-3/f3fe407eee430310c06bd6258ec434c8/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-datatransport:18.0.0] /home/rohit/.gradle/caches/transforms-3/f3fe407eee430310c06bd6258ec434c8/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-installations:17.0.0] /home/rohit/.gradle/caches/transforms-3/1dcf02d57e672f77fed182ad18b961c8/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+138                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+138-->[com.google.firebase:firebase-installations:17.0.0] /home/rohit/.gradle/caches/transforms-3/1dcf02d57e672f77fed182ad18b961c8/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-installations:17.0.0] /home/rohit/.gradle/caches/transforms-3/1dcf02d57e672f77fed182ad18b961c8/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+140        </service>
+141
+142        <provider
+142-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-24:38
+143            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+143-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-88
+144            android:authorities="com.loginapp.reactnativefirebaseappinitprovider"
+144-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-86
+145            android:exported="false"
+145-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-37
+146            android:initOrder="99" />
+146-->[:react-native-firebase_app] /home/rohit/Desktop/myproject/loginapp/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-35
+147        <provider
+147-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:9-32:20
+148            android:name="expo.modules.filesystem.FileSystemFileProvider"
+148-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-74
+149            android:authorities="com.loginapp.FileSystemFileProvider"
+149-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-74
+150            android:exported="false"
+150-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-37
+151            android:grantUriPermissions="true" >
+151-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-47
+152            <meta-data
+152-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:70
+153                android:name="android.support.FILE_PROVIDER_PATHS"
+153-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-67
+154                android:resource="@xml/file_system_provider_paths" />
+154-->[:expo-file-system] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-67
+155        </provider>
+156
+157        <meta-data
+157-->[:expo-modules-core] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:89
+158            android:name="org.unimodules.core.AppLoader#react-native-headless"
+158-->[:expo-modules-core] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-79
+159            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+159-->[:expo-modules-core] /home/rohit/Desktop/myproject/loginapp/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-86
+160
+161        <activity
+161-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+162            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+162-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+163            android:excludeFromRecents="true"
+163-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+164            android:exported="true"
+164-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+165            android:launchMode="singleTask"
+165-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+166            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+166-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+167            <intent-filter>
+167-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+168                <action android:name="android.intent.action.VIEW" />
+168-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:17:7-59
+168-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:17:15-56
+169
+170                <category android:name="android.intent.category.DEFAULT" />
+170-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+170-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+171                <category android:name="android.intent.category.BROWSABLE" />
+171-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:18:7-68
+171-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:18:17-65
+172
+173                <data
+173-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:19:7-38
+174                    android:host="firebase.auth"
+175                    android:path="/"
+176                    android:scheme="genericidp" />
+176-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:19:13-35
+177            </intent-filter>
+178        </activity>
+179        <activity
+179-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+180            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+180-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+181            android:excludeFromRecents="true"
+181-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+182            android:exported="true"
+182-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+183            android:launchMode="singleTask"
+183-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+184            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+184-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+185            <intent-filter>
+185-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+186                <action android:name="android.intent.action.VIEW" />
+186-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:17:7-59
+186-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:17:15-56
+187
+188                <category android:name="android.intent.category.DEFAULT" />
+188-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+188-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+189                <category android:name="android.intent.category.BROWSABLE" />
+189-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:18:7-68
+189-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:18:17-65
+190
+191                <data
+191-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:19:7-38
+192                    android:host="firebase.auth"
+193                    android:path="/"
+194                    android:scheme="recaptcha" />
+194-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:19:13-35
+195            </intent-filter>
+196        </activity>
+197
+198        <service
+198-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+199            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+199-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+200            android:enabled="true"
+200-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+201            android:exported="false" >
+201-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+202            <intent-filter>
+202-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+203                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+203-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+203-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
+204
+205                <category android:name="android.intent.category.DEFAULT" />
+205-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+205-->[com.google.firebase:firebase-auth:21.0.1] /home/rohit/.gradle/caches/transforms-3/782f46167c3abdf4395492bbc0e8b13d/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+206            </intent-filter>
+207        </service>
+208
+209        <receiver
+209-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+210            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+210-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+211            android:exported="true"
+211-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+212            android:permission="com.google.android.c2dm.permission.SEND" >
+212-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+213            <intent-filter>
+213-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:32:13-34:29
+214                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+214-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:17-81
+214-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:33:25-78
+215            </intent-filter>
+216        </receiver>
+217        <!--
+218             FirebaseMessagingService performs security checks at runtime,
+219             but set to not exported to explicitly avoid allowing another app to call it.
+220        -->
+221        <service
+221-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+222            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+222-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+223            android:directBootAware="true"
+223-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+224            android:exported="false" >
+224-->[com.google.firebase:firebase-messaging:23.0.0] /home/rohit/.gradle/caches/transforms-3/9e649fa2469458e125f1f52d22c5d9ea/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+225            <intent-filter android:priority="-500" >
+225-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:52:13-54:29
+226                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+226-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:53:17-78
+226-->/home/rohit/Desktop/myproject/loginapp/android/app/src/main/AndroidManifest.xml:53:25-75
+227            </intent-filter>
+228        </service>
+229        <service
+229-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/rohit/.gradle/caches/transforms-3/1286115b8f72d8a75ddaca07489e5b74/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+230            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+230-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/rohit/.gradle/caches/transforms-3/1286115b8f72d8a75ddaca07489e5b74/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+231            android:exported="false" >
+231-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/rohit/.gradle/caches/transforms-3/1286115b8f72d8a75ddaca07489e5b74/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+232            <meta-data
+232-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/rohit/.gradle/caches/transforms-3/1286115b8f72d8a75ddaca07489e5b74/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+233                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+233-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/rohit/.gradle/caches/transforms-3/1286115b8f72d8a75ddaca07489e5b74/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+234                android:value="cct" />
+234-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/rohit/.gradle/caches/transforms-3/1286115b8f72d8a75ddaca07489e5b74/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+235        </service>
+236        <service
+236-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/rohit/.gradle/caches/transforms-3/d018fdde7fc1f761016ab7cdc2585e2e/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+237            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+237-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/rohit/.gradle/caches/transforms-3/d018fdde7fc1f761016ab7cdc2585e2e/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+238            android:exported="false"
+238-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/rohit/.gradle/caches/transforms-3/d018fdde7fc1f761016ab7cdc2585e2e/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+239            android:permission="android.permission.BIND_JOB_SERVICE" >
+239-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/rohit/.gradle/caches/transforms-3/d018fdde7fc1f761016ab7cdc2585e2e/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+240        </service>
+241
+242        <receiver
+242-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/rohit/.gradle/caches/transforms-3/d018fdde7fc1f761016ab7cdc2585e2e/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+243            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+243-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/rohit/.gradle/caches/transforms-3/d018fdde7fc1f761016ab7cdc2585e2e/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+244            android:exported="false" />
+244-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/rohit/.gradle/caches/transforms-3/d018fdde7fc1f761016ab7cdc2585e2e/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+245
+246        <activity
+246-->[com.google.android.gms:play-services-auth:20.1.0] /home/rohit/.gradle/caches/transforms-3/22353952a0a38d17b2a43636d21013b3/transformed/jetified-play-services-auth-20.1.0/AndroidManifest.xml:23:9-27:75
+247            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+247-->[com.google.android.gms:play-services-auth:20.1.0] /home/rohit/.gradle/caches/transforms-3/22353952a0a38d17b2a43636d21013b3/transformed/jetified-play-services-auth-20.1.0/AndroidManifest.xml:24:13-93
+248            android:excludeFromRecents="true"
+248-->[com.google.android.gms:play-services-auth:20.1.0] /home/rohit/.gradle/caches/transforms-3/22353952a0a38d17b2a43636d21013b3/transformed/jetified-play-services-auth-20.1.0/AndroidManifest.xml:25:13-46
+249            android:exported="false"
+249-->[com.google.android.gms:play-services-auth:20.1.0] /home/rohit/.gradle/caches/transforms-3/22353952a0a38d17b2a43636d21013b3/transformed/jetified-play-services-auth-20.1.0/AndroidManifest.xml:26:13-37
+250            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+250-->[com.google.android.gms:play-services-auth:20.1.0] /home/rohit/.gradle/caches/transforms-3/22353952a0a38d17b2a43636d21013b3/transformed/jetified-play-services-auth-20.1.0/AndroidManifest.xml:27:13-72
+251        <!--
+252            Service handling Google Sign-In user revocation. For apps that do not integrate with
+253            Google Sign-In, this service will never be started.
+254        -->
+255        <service
+255-->[com.google.android.gms:play-services-auth:20.1.0] /home/rohit/.gradle/caches/transforms-3/22353952a0a38d17b2a43636d21013b3/transformed/jetified-play-services-auth-20.1.0/AndroidManifest.xml:33:9-37:51
+256            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+256-->[com.google.android.gms:play-services-auth:20.1.0] /home/rohit/.gradle/caches/transforms-3/22353952a0a38d17b2a43636d21013b3/transformed/jetified-play-services-auth-20.1.0/AndroidManifest.xml:34:13-89
+257            android:exported="true"
+257-->[com.google.android.gms:play-services-auth:20.1.0] /home/rohit/.gradle/caches/transforms-3/22353952a0a38d17b2a43636d21013b3/transformed/jetified-play-services-auth-20.1.0/AndroidManifest.xml:35:13-36
+258            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+258-->[com.google.android.gms:play-services-auth:20.1.0] /home/rohit/.gradle/caches/transforms-3/22353952a0a38d17b2a43636d21013b3/transformed/jetified-play-services-auth-20.1.0/AndroidManifest.xml:36:13-107
+259            android:visibleToInstantApps="true" />
+259-->[com.google.android.gms:play-services-auth:20.1.0] /home/rohit/.gradle/caches/transforms-3/22353952a0a38d17b2a43636d21013b3/transformed/jetified-play-services-auth-20.1.0/AndroidManifest.xml:37:13-48
+260
+261        <activity
+261-->[com.google.android.gms:play-services-base:18.0.1] /home/rohit/.gradle/caches/transforms-3/304a75b6a5bbef780e26356822c34dba/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+262            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+262-->[com.google.android.gms:play-services-base:18.0.1] /home/rohit/.gradle/caches/transforms-3/304a75b6a5bbef780e26356822c34dba/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+263            android:exported="false"
+263-->[com.google.android.gms:play-services-base:18.0.1] /home/rohit/.gradle/caches/transforms-3/304a75b6a5bbef780e26356822c34dba/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+264            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+264-->[com.google.android.gms:play-services-base:18.0.1] /home/rohit/.gradle/caches/transforms-3/304a75b6a5bbef780e26356822c34dba/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+265
+266        <provider
+266-->[com.google.firebase:firebase-common:20.0.0] /home/rohit/.gradle/caches/transforms-3/dfc172e13ac61f3210434dcbcf410699/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+267            android:name="com.google.firebase.provider.FirebaseInitProvider"
+267-->[com.google.firebase:firebase-common:20.0.0] /home/rohit/.gradle/caches/transforms-3/dfc172e13ac61f3210434dcbcf410699/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+268            android:authorities="com.loginapp.firebaseinitprovider"
+268-->[com.google.firebase:firebase-common:20.0.0] /home/rohit/.gradle/caches/transforms-3/dfc172e13ac61f3210434dcbcf410699/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+269            android:directBootAware="true"
+269-->[com.google.firebase:firebase-common:20.0.0] /home/rohit/.gradle/caches/transforms-3/dfc172e13ac61f3210434dcbcf410699/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+270            android:exported="false"
+270-->[com.google.firebase:firebase-common:20.0.0] /home/rohit/.gradle/caches/transforms-3/dfc172e13ac61f3210434dcbcf410699/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+271            android:initOrder="100" />
+271-->[com.google.firebase:firebase-common:20.0.0] /home/rohit/.gradle/caches/transforms-3/dfc172e13ac61f3210434dcbcf410699/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+272
+273        <meta-data
+273-->[com.google.android.gms:play-services-basement:18.0.0] /home/rohit/.gradle/caches/transforms-3/0b45f46d0aa555272212183ccdb4ca0d/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+274            android:name="com.google.android.gms.version"
+274-->[com.google.android.gms:play-services-basement:18.0.0] /home/rohit/.gradle/caches/transforms-3/0b45f46d0aa555272212183ccdb4ca0d/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+275            android:value="@integer/google_play_services_version" />
+275-->[com.google.android.gms:play-services-basement:18.0.0] /home/rohit/.gradle/caches/transforms-3/0b45f46d0aa555272212183ccdb4ca0d/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+276    </application>
+277
+278</manifest>

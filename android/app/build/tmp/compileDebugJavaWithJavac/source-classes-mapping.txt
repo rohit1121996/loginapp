@@ -1,0 +1,14 @@
+com/loginapp/MainActivity.java
+ com.loginapp.MainActivity
+com/loginapp/BuildConfig.java
+ com.loginapp.BuildConfig
+com/loginapp/ReactNativeFlipper.java
+ com.loginapp.ReactNativeFlipper
+ com.loginapp.ReactNativeFlipper$1
+ com.loginapp.ReactNativeFlipper$2
+ com.loginapp.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/loginapp/MainApplication.java
+ com.loginapp.MainApplication
+ com.loginapp.MainApplication$1
